@@ -7,17 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-    <h1>Search</h1>
+    <h1>Login</h1>
     <form method = "POST">
       {% csrf_token %}
       {{form}}
-
       <input type="submit"/>
     </form>
     
-    <h2>Areas</h2>
-    {% for area in areas %}
-        <h1>{{area.name}}</h1>
-    {% endfor %}
 </body>
 </html>
